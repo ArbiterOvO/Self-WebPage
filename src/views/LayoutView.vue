@@ -1,22 +1,166 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+const currentPage = ref(1)
+const changeLi = (index) => {
+  if (index == currentPage.value) {
+    return {
+      left: '20px'
+    }
+  }
+}
+</script>
 
 <template>
+  <!-- 左上角头像 -->
+  <div class="border-square-out">
+    <div class="border-circle-out"></div>
+    <div class="border-circle"></div>
+    <div class="border-square"></div>
+    <div class="tag"></div>
+  </div>
+  <!-- 左侧导航栏 -->
   <el-container class="layout-container">
     <nav>
       <ul>
-        <li><span @click="$router.push('/')">首页</span></li>
-        <li><span @click="$router.push('/self')">个人介绍</span></li>
-        <li><span @click="$router.push('/project')">unity项目</span></li>
-        <li><span @click="$router.push('/about')">相关信息</span></li>
+        <li>
+          <span :style="changeLi(0)" @click="(currentPage = 0), $router.push('/')">首页</span>
+        </li>
+        <li>
+          <span :style="changeLi(1)" @click="(currentPage = 1), $router.push('/self')"
+            >个人介绍</span
+          >
+        </li>
+        <li>
+          <span :style="changeLi(2)" @click="(currentPage = 2), $router.push('/unityProject')"
+            >unity项目</span
+          >
+        </li>
+        <li>
+          <span :style="changeLi(3)" @click="(currentPage = 3), $router.push('/javaProject')"
+            >java项目</span
+          >
+        </li>
+        <li :style="changeLi(4)">
+          <span @click="(currentPage = 4), $router.push('/about')">相关信息</span>
+        </li>
       </ul>
     </nav>
   </el-container>
+  <!-- 左侧书签 -->
+  <div class="bookmark-out"></div>
+  <div class="bookmark">
+    <div class="bookmark-circle-out"></div>
+    <div class="bookmark-circle"></div>
+    <p>Arbiter</p>
+  </div>
+
   <div class="layout-main">
     <router-view></router-view>
   </div>
 </template>
 
 <style>
+.border-circle {
+  width: 190px;
+  height: 190px;
+  position: fixed;
+  top: 40px;
+  left: 10px;
+  border-radius: 95px;
+  background-color: coral;
+}
+.border-square {
+  width: 98px;
+  height: 190px;
+  position: fixed;
+  left: 0px;
+  top: 40px;
+  background-color: coral;
+}
+.border-square-out {
+  width: 98px;
+  height: 200px;
+  position: fixed;
+  left: 0px;
+  top: 35px;
+  background-color: rgb(122, 18, 13);
+}
+.border-circle-out {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  top: 35px;
+  left: 5px;
+  border-radius: 100px;
+  background-color: rgb(122, 18, 13);
+}
+.tag {
+  position: fixed;
+  left: 21px;
+  top: 52px;
+  width: 160px;
+  height: 160px;
+  border-radius: 80px;
+  border: 3px solid rgb(247, 30, 63);
+  background-color: #f0ddc1;
+  background-image: url(../assets/头像.png);
+  background-size: cover;
+}
+.bookmark {
+  position: fixed;
+  left: 0px;
+  bottom: 70px;
+  width: 190px;
+  height: 70px;
+  background-color: coral;
+}
+.bookmark-out {
+  position: fixed;
+  left: 0px;
+  bottom: 65px;
+  width: 200px;
+  height: 80px;
+  background-color: rgb(122, 18, 13);
+}
+.bookmark p {
+  margin-top: 20px;
+  font-size: 40px;
+  font-family: 'Apple Color Emoji';
+  display: inline-block;
+  font-weight: bold;
+  color: #def;
+  text-shadow:
+    0 0 1px currentColor,
+    -1px -1px 1px #000,
+    0 -1px 1px #000,
+    1px -1px 1px #000,
+    1px 0 1px #000,
+    1px 1px 1px #000,
+    0 1px 1px #000,
+    -1px 1px 1px #000,
+    -1px 0 1px #000;
+  -webkit-filter: url(#diff1);
+  filter: url(#diff1); /*background:#def;padding:0 .2em*/
+}
+.bookmark-circle {
+  position: fixed;
+  left: 157px;
+  bottom: 64px;
+  width: 82px;
+  height: 82px;
+  border-radius: 42px;
+  background-color: gainsboro;
+  border-left: 0px solid rgb(247, 30, 63);
+}
+.bookmark-circle-out {
+  position: fixed;
+  left: 150px;
+  bottom: 65px;
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgb(122, 18, 13);
+}
 .layout-header {
   width: 100%;
   height: 80px;
@@ -27,21 +171,27 @@
   border-radius: 8px;
 }
 .layout-container {
-  width: 200px;
+  width: 210px;
   position: fixed;
   left: 0%;
   top: 25%;
 }
-body {
-  background-color: blanchedalmond;
+body,
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: gainsboro;
 }
 .layout-main {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  left: 220px;
-  top: 0;
+  margin-right: 10px;
+  margin-left: 220px;
+  margin-top: 20px;
+  height: auto;
+  position: relative;
   background-color: blanchedalmond;
+  border-radius: 30px;
+  box-shadow: -15px 0px 3px #e3ccaa;
 }
 
 nav ul {

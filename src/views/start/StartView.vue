@@ -31,10 +31,10 @@ onMounted(() => {
 .StartText {
   position: absolute;
   left: 7%;
-  top: 30%;
+  top: 25%;
   width: auto;
   font-family: Verdana;
-  font-size: 120px;
+  font-size: 110px;
   font-weight: bold;
   color: transparent;
   -webkit-text-stroke: 2px white;
@@ -71,6 +71,8 @@ body {
   line-height: 3em;
   letter-spacing: 0.2em;
   position: relative;
+  margin-left: -55%;
+  margin-top: 50%;
   filter: blur(2px);
   transition: 0.5s;
 }

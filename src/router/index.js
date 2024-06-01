@@ -21,8 +21,12 @@ const router = createRouter({
           component: () => import('../views/self/SelfView.vue')
         },
         {
-          path: '/project',
-          component: () => import('../views/project/ProjectView.vue')
+          path: '/unityProject',
+          component: () => import('../views/unityProject/UnityProjectView.vue')
+        },
+        {
+          path: '/javaProject',
+          component: () => import('../views/javaProject/JavaProjectView.vue')
         },
         {
           path: '/about',
