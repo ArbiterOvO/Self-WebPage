@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as o,c as t,b as c}from"./index-C0UDETR8.js";const a={},s=c("p",null,"这是java项目页面",-1),n=[s];function r(_,i){return o(),t("section",null,n)}const d=e(a,[["render",r]]);export{d as default};

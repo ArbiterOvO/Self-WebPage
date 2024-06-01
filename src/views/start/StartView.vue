@@ -18,7 +18,7 @@ onMounted(() => {
       </transition>
     </div>
     <div class="box">
-      <a href="home">ENTER</a>
+      <a @click="$router.push('/home')">ENTER</a>
       <span class="top"></span>
       <span class="bottom"></span>
       <span class="left"></span>
@@ -54,7 +54,10 @@ onMounted(() => {
 }
 html,
 body {
-  height: 100%;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,8 +74,8 @@ body {
   line-height: 3em;
   letter-spacing: 0.2em;
   position: relative;
-  margin-left: -55%;
-  margin-top: 50%;
+  margin-left: -60%;
+  margin-top: 190%;
   filter: blur(2px);
   transition: 0.5s;
 }
@@ -129,8 +132,9 @@ body {
 }
 .box a {
   position: relative;
-  top: 70%;
+  top: 50%;
   left: 32%;
   text-decoration: none;
+  cursor: pointer;
 }
 </style>
