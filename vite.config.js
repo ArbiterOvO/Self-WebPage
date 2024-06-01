@@ -20,7 +20,7 @@ export default defineConfig({
   build: {
     outDir: 'docs'
   },
-  base: 'Self-WebPage',
+  base: '/Self-WebPage',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
