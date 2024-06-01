@@ -183,6 +183,7 @@ html {
   padding: 0;
   background-color: gainsboro;
   display: block;
+  color: black;
 }
 .layout-main {
   margin-right: 10px;
