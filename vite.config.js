@@ -17,6 +17,9 @@ export default defineConfig({
       resolvers: [ElementPlusResolver()]
     })
   ],
+  build: {
+    outDir: 'docs'
+  },
   base: '/Self-WebPage/',
   resolve: {
     alias: {
