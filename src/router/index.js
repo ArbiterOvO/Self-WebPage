@@ -4,16 +4,16 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/start',
+      path: '/',
       name: 'start',
       component: () => import('../views/start/StartView.vue')
     },
     {
-      path: '/',
+      path: '/index',
       component: () => import('../views/LayoutView.vue'),
       children: [
         {
-          path: '/',
+          path: '/home',
           component: () => import('../views/home/HomeView.vue')
         },
         {

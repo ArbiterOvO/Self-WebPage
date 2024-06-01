@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-const currentPage = ref(1)
+const currentPage = ref(0)
 const changeLi = (index) => {
   if (index == currentPage.value) {
     return {
@@ -23,7 +23,7 @@ const changeLi = (index) => {
     <nav>
       <ul>
         <li>
-          <span :style="changeLi(0)" @click="(currentPage = 0), $router.push('/')">首页</span>
+          <span :style="changeLi(0)" @click="(currentPage = 0), $router.push('/home')">首页</span>
         </li>
         <li>
           <span :style="changeLi(1)" @click="(currentPage = 1), $router.push('/self')"
