@@ -18,7 +18,7 @@ onMounted(() => {
       </transition>
     </div>
     <div class="box">
-      <a href="/Self-WebPage/home">ENTER</a>
+      <a href="home">ENTER</a>
       <span class="top"></span>
       <span class="bottom"></span>
       <span class="left"></span>

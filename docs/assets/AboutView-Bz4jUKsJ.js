@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as o,c as t,b as c}from"./index-Cpu56H-Y.js";const s={},n=c("p",null,"这是about页面",-1),r=[n];function a(_,i){return o(),t("section",null,r)}const u=e(s,[["render",a]]);export{u as default};
