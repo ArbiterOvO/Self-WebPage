@@ -1,1 +1,0 @@
-import{_ as e}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{a as o,c as t,b as c}from"./index-prFNtWHA.js";const s={},n=c("p",null,"这是自我介绍页面",-1),r=[n];function _(a,l){return o(),t("section",null,r)}const d=e(s,[["render",_]]);export{d as default};
