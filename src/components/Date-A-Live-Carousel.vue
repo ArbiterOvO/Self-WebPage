@@ -1,6 +1,6 @@
 <script setup>
 const getImageUrl = (imageId) => {
-  return new URL('/assets/Date-A-Live/' + imageId + '.png', import.meta.url).href
+  return new URL('../assets/Date-A-Live/' + imageId + '.png', import.meta.url).href
 }
 </script>
 
