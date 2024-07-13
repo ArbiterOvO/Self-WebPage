@@ -1,0 +1,1 @@
+import{_ as e,a as t,c as o,b as c}from"./index-mIL3Piy9.js";const s={},n=c("p",null,"这是about页面",-1),a=[n];function _(r,l){return t(),o("section",null,a)}const u=e(s,[["render",_]]);export{u as default};
