@@ -123,7 +123,7 @@ const changeLi = (index) => {
   background-color: rgb(122, 18, 13);
 }
 .bookmark p {
-  margin-top: 20px;
+  margin-top: 6px;
   font-size: 40px;
   font-family: 'Apple Color Emoji';
   display: inline-block;
