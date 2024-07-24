@@ -49,7 +49,7 @@ import DAL from '@/components/Date-A-Live-Carousel.vue'
   </div>
 </template>
 
-<style>
+<style scoped>
 .introduce-img {
   border-radius: 20px;
   height: 730px;

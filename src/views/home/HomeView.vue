@@ -44,7 +44,6 @@ const resetTimer = () => {
 </script>
 
 <template>
-  <section></section>
   <!-- 圆形轮播图 -->
   <div class="circleImage">
     <ul :style="{ 'background-image': 'url(' + getImageUrl(currentIndex) + ')' }">
@@ -69,10 +68,9 @@ const resetTimer = () => {
     <img src="@/assets/icon/JAVA.png">
     <img src="@/assets/icon/VUE.png">
   </div>
-  <br v-for="item in 12" :key="item" />
 </template>
 
-<style>
+<style scoped>
 .icon{
   margin-left: 50%;
   margin-top: 5%
@@ -83,7 +81,7 @@ const resetTimer = () => {
 }
 .home-text{
   margin-left: 50%;
-  margin-top: -15%;
+  margin-top: -12%;
 }
 .home-text .title{
   position: relative;
@@ -108,7 +106,7 @@ const resetTimer = () => {
 }
 .circleImage {
   position: relative;
-  top: 200px;
+  top: 250px;
   left: 200px;
 }
 .circleImage img {

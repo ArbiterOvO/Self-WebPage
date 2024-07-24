@@ -55,7 +55,7 @@ const changeLi = (index) => {
   </div>
 
   <div class="layout-main">
-    <router-view></router-view>
+    <router-view class="router"></router-view>
   </div>
 </template>
 
@@ -186,14 +186,17 @@ html {
   color: black;
 }
 .layout-main {
-  margin-right: 10px;
-  margin-left: 220px;
-  margin-top: 20px;
-  height: auto;
-  position: relative;
+  left: 12%;
+  right: 0;
+  top:1%;
+  position: absolute;
   background-color: blanchedalmond;
   border-radius: 30px;
   box-shadow: -15px 0px 3px #e3ccaa;
+  min-height: 98%;
+}
+.layout-main .router{
+  min-height: 90%;
 }
 
 nav ul {
