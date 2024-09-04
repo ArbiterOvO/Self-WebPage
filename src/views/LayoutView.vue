@@ -11,6 +11,7 @@ const changeLi = (index) => {
 </script>
 
 <template>
+  
   <!-- 左上角头像 -->
   <div class="border-square-out">
     <div class="border-circle-out"></div>
