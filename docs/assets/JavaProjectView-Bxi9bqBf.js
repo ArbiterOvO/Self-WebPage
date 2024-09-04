@@ -1,0 +1,1 @@
+import{_ as e,a as c,c as t,b as o}from"./index-CXS9aqhy.js";const a={},s=o("p",null,"这是java项目页面",-1),n=[s];function r(_,l){return c(),t("section",null,n)}const d=e(a,[["render",r]]);export{d as default};
