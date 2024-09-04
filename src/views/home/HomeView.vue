@@ -16,7 +16,7 @@ const transform = computed(() => {
 })
 //图片
 const getImageUrl = (imageId) => {
-  return new URL('/Self-WebPage/assets/home/' + imageId + '.png', import.meta.url).href
+  return new URL('/assets/home/' + imageId + '.png', import.meta.url).href
 }
 //轮播图
 const currentIndex = ref(1)
